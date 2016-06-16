@@ -14,6 +14,11 @@
 		73E36CFF1C99BEB600F244D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E36CFD1C99BEB600F244D3 /* Main.storyboard */; };
 		73E36D011C99BEB600F244D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73E36D001C99BEB600F244D3 /* Assets.xcassets */; };
 		73E36D041C99BEB600F244D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73E36D021C99BEB600F244D3 /* LaunchScreen.storyboard */; };
+		73E36D101C99BF0700F244D3 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E36D0B1C99BF0700F244D3 /* bg.png */; };
+		73E36D111C99BF0700F244D3 /* flappy1.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E36D0C1C99BF0700F244D3 /* flappy1.png */; };
+		73E36D121C99BF0700F244D3 /* flappy2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E36D0D1C99BF0700F244D3 /* flappy2.png */; };
+		73E36D131C99BF0700F244D3 /* pipe1.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E36D0E1C99BF0700F244D3 /* pipe1.png */; };
+		73E36D141C99BF0700F244D3 /* pipe2.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E36D0F1C99BF0700F244D3 /* pipe2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		73E36D001C99BEB600F244D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73E36D031C99BEB600F244D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73E36D051C99BEB600F244D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73E36D0B1C99BF0700F244D3 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		73E36D0C1C99BF0700F244D3 /* flappy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy1.png; sourceTree = "<group>"; };
+		73E36D0D1C99BF0700F244D3 /* flappy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy2.png; sourceTree = "<group>"; };
+		73E36D0E1C99BF0700F244D3 /* pipe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipe1.png; sourceTree = "<group>"; };
+		73E36D0F1C99BF0700F244D3 /* pipe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipe2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 				73E36D001C99BEB600F244D3 /* Assets.xcassets */,
 				73E36D021C99BEB600F244D3 /* LaunchScreen.storyboard */,
 				73E36D051C99BEB600F244D3 /* Info.plist */,
+				73E36D0B1C99BF0700F244D3 /* bg.png */,
+				73E36D0C1C99BF0700F244D3 /* flappy1.png */,
+				73E36D0D1C99BF0700F244D3 /* flappy2.png */,
+				73E36D0E1C99BF0700F244D3 /* pipe1.png */,
+				73E36D0F1C99BF0700F244D3 /* pipe2.png */,
 			);
 			path = "Flappy Bird (Hoy)";
 			sourceTree = "<group>";
@@ -102,6 +117,7 @@
 				TargetAttributes = {
 					73E36CF11C99BEB500F244D3 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 32DXF22EH3;
 					};
 				};
 			};
@@ -128,10 +144,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E36D121C99BF0700F244D3 /* flappy2.png in Resources */,
+				73E36D101C99BF0700F244D3 /* bg.png in Resources */,
 				73E36CF81C99BEB600F244D3 /* GameScene.sks in Resources */,
+				73E36D131C99BF0700F244D3 /* pipe1.png in Resources */,
 				73E36D041C99BEB600F244D3 /* LaunchScreen.storyboard in Resources */,
+				73E36D141C99BF0700F244D3 /* pipe2.png in Resources */,
 				73E36D011C99BEB600F244D3 /* Assets.xcassets in Resources */,
 				73E36CFF1C99BEB600F244D3 /* Main.storyboard in Resources */,
+				73E36D111C99BF0700F244D3 /* flappy1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +276,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Flappy Bird (Hoy)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JungBusiness.Flappy-Bird--Hoy-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JungBusiness.Flappy-Bird-Hoy-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -266,10 +290,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Flappy Bird (Hoy)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.JungBusiness.Flappy-Bird--Hoy-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JungBusiness.Flappy-Bird-Hoy-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -36,7 +36,7 @@ class GameViewController: UIViewController {
 
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return .AllButUpsideDown
+            return .Landscape
         } else {
             return .All
         }
